@@ -1,16 +1,25 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { TopoComponent } from './topo/topo.component';
+import { PainelComponent } from './painel/painel.component';
+import { ProgressoComponent } from './progresso/progresso.component';
+import { TentativasComponent } from './tentativas/tentativas.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TopoComponent,
+    PainelComponent,
+    ProgressoComponent,
+    TentativasComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
